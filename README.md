@@ -18,6 +18,7 @@ node app.js
 It will listen on port 3000 at localhost.
 #
 you can access home page of the app from browser at http://localhost:3000/
+#
 you can access login page of the app from browser at http://localhost:3000/login
 #        
 There is a submit button in login page,
