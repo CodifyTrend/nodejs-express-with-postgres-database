@@ -1,4 +1,4 @@
-# nodejs-express-with-postgres-database
+# nodejs-express-with-postgres-database.
 nodejs express login form with postgres database connectivity
 This is the nodejs express app that listen on port 3000 at localhost as:
    http://localhost:3000/   ( home page of the app)
@@ -8,7 +8,8 @@ upon click that button the username and password entries are stored to poastgres
 
 
 
-learnings:
+#learnings:
+#
 1. ajax call to get and post methods.
 2. jquery to fetch the values of username and password.
 3. javascript used at login page.
