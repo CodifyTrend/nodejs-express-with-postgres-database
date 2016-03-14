@@ -1,11 +1,12 @@
 # nodejs-express app-with-postgres-database.
 This app contains login form with postgres database connectivity.
 #requirements
+#
 1.install nodejs
 2. install postgres databse.
 3. create the database and replace your db name in /webserver/models/db.js file at connection string otherwise it will crash.
 # run the app 
-To run the app type the command from webserver directory
+To run the app type the command from webserver directory as:
 #
 npm start
 #
@@ -15,8 +16,8 @@ node app.js
 #
 It will listen on port 3000 at localhost.
 #
- you can access home page of the app from browser at http://localhost:3000/
-  you can access login page of the app from browser at http://localhost:3000/login
+you can access home page of the app from browser at http://localhost:3000/
+you can access login page of the app from browser at http://localhost:3000/login
 #        
 There is a submit button in login page,
 upon click that button the username and password entries are stored to postgres database table.
