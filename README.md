@@ -1,5 +1,6 @@
 # nodejs-express-with-postgres-database.
-nodejs express login form with postgres database connectivity
+nodejs express login form with postgres database connectivity.
+#
 This is the nodejs express app that listen on port 3000 at localhost as:
    http://localhost:3000/   ( home page of the app)
    http://localhost:3000/login  ( login form that take  username and password)
