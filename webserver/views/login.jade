@@ -1,11 +1,9 @@
 extends layout
 block content
-    | username
-    input#uname(type='text', value='enter name' )
-    br
-    | password
-    input#pass(type='password', value='password' )
-    br
- 
-    button(onclick='populateTable();') submit
-    
+    .form-group
+      label(for='usr') Name:
+      input#uname.form-control(type='text')
+    .form-group
+      label(for='pwd') Password:
+      input#pass.form-control(type='password')
+     button.btn.btn-default(type='button', onclick='populateTable();') submit
