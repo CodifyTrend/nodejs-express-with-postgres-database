@@ -3,7 +3,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-
+var db = require('./models/db');
 var app = express();
 
 // all environments
@@ -31,5 +31,6 @@ app.get('/login', user.login);
 app.post('/send',user.send);
 
 http.createServer(app).listen(app.get('port'), function(){
+  db.pg_migrate();
   console.log('Express server listening on port ' + app.get('port'));
 });
