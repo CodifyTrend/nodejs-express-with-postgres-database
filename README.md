@@ -2,8 +2,8 @@
 This app contains login form with postgres database connectivity.
 #requirements
 #
-1. install nodejs
-2. install postgres databse.
+1. install nodejs v5.8.0 and npm version 3.7.3
+2. install postgres databse v9.4.6
 3. create the database and replace your db name in /webserver/models/db.js file at connection string otherwise it will crash.
 
 #run the app 
@@ -20,14 +20,14 @@ It will listen on port 3000 at localhost.
 you can access home page of the app from browser at http://localhost:3000/
 #
 you can access login page of the app from browser at http://localhost:3000/login
-#        
+#    
+It will create login table inside your database at startup.
 There is a submit button in login page,
-upon click that button the username and password entries are stored to postgres database table.
+upon click that button the username and password entries are stored to login table of database.
 
 #learnings:
 #
 1. ajax call to get and post methods.
 2. jquery to fetch the values of username and password.
-3. javascript is used.
-4. postgres database connectivity.
-5. fdjwfjd
+3. javascript is used to handle onclick events in /views/login.jade
+4. postgres database connection to insert the username and password to database.
