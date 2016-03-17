@@ -1,7 +1,7 @@
 module.exports={
                  pg_migrate: function pg_migrate(){
                        var client=this.pg_connect();
-                       client.query("create table login (uname char(20), pass char(20))"); 	         
+                      client.query("create table login (uname char(20), pass char(20))"); 	         
             },
 
                 pg_connect: function pg_connect() {

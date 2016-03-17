@@ -1,5 +1,5 @@
 function populateTable(){
-  
+  console.log("inside populate table function");
     var u = $("#uname").val();
     var p = $("#pass").val()
     $.ajax({
