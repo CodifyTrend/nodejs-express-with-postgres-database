@@ -1,6 +1,8 @@
 extends layout
 block content
-    .form-group
+        
+    .form-group 
+      span #{user} 
       label(for='usr') Name:
       input#uname.form-control(type='text')
     .form-group
@@ -8,3 +10,4 @@ block content
       input#pass.form-control(type='password')
      button.btn.btn-info(type='button', onclick='populateTable();') submit
      button.btn.btn-info(type='button', onclick="window.location.href='/regis'") register here 
+    
