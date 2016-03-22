@@ -11,5 +11,5 @@ html(lang='en')
     .container
       h2 Alert
       .alert.alert-success
-        strong registration!
-        |    success
+        strong you are now login as #{user}!
+      button.btn.btn-info(type='button', onclick="window.location.href='/logout'") logout

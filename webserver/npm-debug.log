@@ -1,14 +1,14 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
 2 info using npm@3.7.3
-3 info using node@v5.8.0
+3 info using node@v5.9.0
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle webserver@0.0.1~prestart: webserver@0.0.1
 6 silly lifecycle webserver@0.0.1~prestart: no script for prestart, continuing
 7 info lifecycle webserver@0.0.1~start: webserver@0.0.1
 8 verbose lifecycle webserver@0.0.1~start: unsafe-perm in lifecycle true
-9 verbose lifecycle webserver@0.0.1~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/amit/git/webserver/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle webserver@0.0.1~start: CWD: /home/amit/git/webserver
+9 verbose lifecycle webserver@0.0.1~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/amit/github/nodejs-express-with-postgres-database/webserver/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle webserver@0.0.1~start: CWD: /home/amit/github/nodejs-express-with-postgres-database/webserver
 11 silly lifecycle webserver@0.0.1~start: Args: [ '-c', 'node app.js' ]
 12 silly lifecycle webserver@0.0.1~start: Returned: code: 1  signal: null
 13 info lifecycle webserver@0.0.1~start: Failed to exec start script
@@ -23,10 +23,10 @@
 14 verbose stack     at maybeClose (internal/child_process.js:850:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid webserver@0.0.1
-16 verbose cwd /home/amit/git/webserver
+16 verbose cwd /home/amit/github/nodejs-express-with-postgres-database/webserver
 17 error Linux 3.13.0-32-generic
 18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
-19 error node v5.8.0
+19 error node v5.9.0
 20 error npm  v3.7.3
 21 error code ELIFECYCLE
 22 error webserver@0.0.1 start: `node app.js`

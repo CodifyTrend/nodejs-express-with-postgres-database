@@ -17,7 +17,7 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-//app.use(session({ secret: 'keyboard cat',resave: false, saveUninitialized: false,cookie: {maxAge:60000}}));
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next) {
@@ -30,13 +30,14 @@ app.use(function(req, res, next) {
 if ('development'== app.get('env')) {
   app.use(express.errorHandler());
 }
+
+app.get('/logout', user.logout);
+app.post('/insert',user.insert);
 app.get('/', routes.index);
 app.get('/login', user.login);
 app.post('/send', user.send);
 app.get('/regis', user.regis);
-app.get('/regmsg', function(req,res){
-res.render('alert');
-});
+app.get('/alert', user.alert);
 
 http.createServer(app).listen(app.get('port'), function(){
   db.pg_migrate();

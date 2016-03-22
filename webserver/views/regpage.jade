@@ -1,14 +1,12 @@
 extends layout
 block content
     .form-group
-      label(for='usr') First Name:
-      input#unamef.form-control(type='text')
-      label(for='usr') Last Name:
-      input#unamel.form-control(type='text')
+      label(for='usr') Name:
+      input#uname.form-control(type='text')
       label(for='usr') Email-Id:
       input#email.form-control(type='text')
     .form-group
       label(for='pwd') Password:
       input#pass.form-control(type='password')
-     button.btn.btn-info(type='button' onclick="window.location.href='/regmsg'") register
+     button.btn.btn-info(type='button' onclick="insert();") register
 
