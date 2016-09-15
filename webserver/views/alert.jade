@@ -1,15 +1,67 @@
-doctype html
-html(lang='en')
-  head
-    title Bootstrap Example
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
-    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
-  body
-    .container
-      h2 Alert
-      .alert.alert-success
-        strong you are now login as #{user}!
-      button.btn.btn-info(type='button', onclick="window.location.href='/logout'") logout
+extends layout
+block content
+  .container
+    .col-md-12
+      h2 STOCK ENTRY
+      div(ng-app='myApp')
+        div( ng-controller='ExampleController')
+          form(name='myForm')
+            label(for='singleSelect') Vendor: 
+            br
+            select(name='singleSelect', ng-model='data.singleSelect')
+              option(value='option-1') Flipkart
+              option(value='option-2') Amazon
+              option(value='option-3') Mantra
+              option(value='option-4') Snapdeal
+              option(value='option-5') Shopclues
+            br
+            label(for='multipleSelect') Items: 
+            br
+            select#multipleSelect(name='multipleSelect', ng-model='data.multipleSelect', multiple='')
+              option(value='option-1') Watch
+              option(value='option-2') Mobile
+              option(value='option-3') Hard Disk
+              option(value='option-4') Pen
+              option(value='option-5') Back Cover
+              option(value='option-6') Table
+            br
+        div(ng-controller='DateController')
+          form
+            .form-group
+              label.control-label(for='request-date')  Date:
+              .control
+                input#request-date.form-control(type='date', ng-model='requestDate')
+        div( ng-controller='myCtrl')
+          form(name='myForm')
+              label
+                h4 Stores:
+              br
+              label
+                | Store1:
+                input(style='margin:10px', type='checkbox', ng-model='checkboxModel.value1')
+              label
+                | Store2:
+                input(style='margin:10px',type='checkbox', ng-model='checkboxModel.value2')
+              label
+                | Store3:
+                input(style='margin:10px', type='checkbox', ng-model='checkboxModel.value3')
+              br
+              label
+                | Store4:
+                input(style='margin:10px', type='checkbox', ng-model='checkboxModel.value4')
+              label
+                | Store5:
+                input(style='margin:10px', type='checkbox', ng-model='checkboxModel.value5')
+              label
+                | Store6:
+                input(style='margin:10px', type='checkbox', ng-model='checkboxModel.value6')
+              br
+              br
+              button( ng-click= 'selectAll()' )
+                | Select All
+              button( ng-click= 'deselectAll()' ) 
+                | Deselect All
+              br
+              br
+              button(style='margin-bottom:30px', ng-click='saveAll()')
+                | Enter 
